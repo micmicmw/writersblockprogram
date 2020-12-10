@@ -1,0 +1,13 @@
+I want to create the core prompt and the basic UI for this program.
+
+- Find a mascot and a name for this program. Going with a assistant vibe.
+
+- add the ability to save prompts to file to be able to bring up later.
+
+- add more themes for characters, starting with superhumans for now because of test group.
+
+- add the feature to remember settings.
+
+- add a feature to tell the time of day for greeting the user
+
+- add the feature to give a intro message and then to greet the user each time after in a non-intro way.
