@@ -11,3 +11,5 @@ I want to create the core prompt and the basic UI for this program.
 - add a feature to tell the time of day for greeting the user
 
 - add the feature to give a intro message and then to greet the user each time after in a non-intro way.
+
+- Fix the resolution problem.
