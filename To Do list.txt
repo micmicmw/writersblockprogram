@@ -2,7 +2,7 @@ I want to create the core prompt and the basic UI for this program.
 
 - Find a mascot and a name for this program. Going with a assistant vibe.
 
-- add the ability to save prompts to file to be able to bring up later. - We can load saved files 
+COMPLETE- add the ability to save prompts to file to be able to bring up later. - We can load saved files 
   into our prompts page. We still need to make the saving function for the program. SHouldn't be to 
   hard once we start.
 
@@ -14,4 +14,7 @@ I want to create the core prompt and the basic UI for this program.
 
 - add the feature to give a intro message and then to greet the user each time after in a non-intro way.
 
-- Fix the resolution problem.- I think i fixed it atleast on my computer check with feedback group for theres
+- Fix the resolution problem.- I think i fixed it atleast on my computer check with feedback group for 
+				theres.
+- Figure out why the input field is not clearing we may need to resort to using the normal input field 
+	for this in unity instead of textmesh

@@ -1,0 +1,15 @@
+Power: illusion
+Alignment: Chaotic Neatral
+Physical Description 
+ethnicity: indian
+size: dwarf
+age: teenager
+sex: female
+Character Characteristics 
+    street smarts
+    strength
+Body Type: curvy
+Important Concepts to the character: 
+    history
+    history
+Place in Orginizations: lone wolf

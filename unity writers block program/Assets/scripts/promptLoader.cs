@@ -12,7 +12,11 @@ public class promptLoader : MonoBehaviour
     public GameObject prefabLoadButton;
     public GameObject promptList;
     public GameObject promptText;
+    public GameObject filenameArea;
+    public GameObject savePanel;
+
     public worldcode mainCode;
+    
     private string path = "Assets/promptfiles";
     // Start is called before the first frame update
     void Start()
@@ -57,7 +61,19 @@ public class promptLoader : MonoBehaviour
     }
     public void savePrompt()
     {
-        // saves a prompt with the chosen name
+        Debug.Log("The file name is " + filenameArea.GetComponent<TextMeshProUGUI>().text);
+        System.IO.File.WriteAllText(path + "/" + filenameArea.GetComponent<TextMeshProUGUI>().text + ".txt", promptText.GetComponent<TextMeshProUGUI>().text);
+        saveClear();
+        savePanel.active = false;
+    }
+    public void saveClear()
+    {
+        Debug.Log("We are getting into the clear function");
+        filenameArea.GetComponent<TextMeshProUGUI>().SetText("");
+    }
+    public void activateSavePanel()
+    {
+        savePanel.active = true;
     }
 
 

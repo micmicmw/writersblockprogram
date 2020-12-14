@@ -1,0 +1,15 @@
+Power: air
+Alignment: Neutral Good
+Physical Description 
+ethnicity: asian
+size: five foot
+age: child
+sex: female
+Character Characteristics 
+    street smarts
+    strength
+Body Type: curvy
+Important Concepts to the character: 
+    good vs evil
+    preservation / destruction
+Place in Orginizations: situational

@@ -1,0 +1,15 @@
+Power: metal
+Alignment: True Neautral
+Physical Description 
+ethnicity: native american
+size: below average
+age: teenager
+sex: female
+Character Characteristics 
+    strength
+    dexterity
+Body Type: average
+Important Concepts to the character: 
+    religion
+    history
+Place in Orginizations: second in command
