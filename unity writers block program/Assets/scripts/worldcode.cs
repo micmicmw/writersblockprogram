@@ -11,6 +11,7 @@ public class worldcode : MonoBehaviour
     public GameObject inDepthpage;
     public GameObject promptPage;
     public GameObject depthindicator;
+    public GameObject loadPromptPage;
 
     public string detail = "empty";
     
@@ -20,6 +21,7 @@ public class worldcode : MonoBehaviour
         themespage.active = false;
         inDepthpage.active = false;
         promptPage.active = false;
+        loadPromptPage.active = false;
 
     }
     public void themepageactivation()
@@ -28,6 +30,7 @@ public class worldcode : MonoBehaviour
         themespage.active = true;
         inDepthpage.active = false;
         promptPage.active = false;
+        loadPromptPage.active = false;
     }
     public void homepageactivation()
     {
@@ -35,6 +38,7 @@ public class worldcode : MonoBehaviour
         themespage.active = false;
         inDepthpage.active = false;
         promptPage.active = false;
+        loadPromptPage.active = false;
     }
     public void indepthpageactivation()
     {
@@ -42,6 +46,7 @@ public class worldcode : MonoBehaviour
         themespage.active = false;
         inDepthpage.active = true;
         promptPage.active = false;
+        loadPromptPage.active = false;
     }
     public void promptpageactivation()
     {
@@ -49,6 +54,17 @@ public class worldcode : MonoBehaviour
         themespage.active = false;
         inDepthpage.active = false;
         promptPage.active = true;
+        loadPromptPage.active = false;
+    }
+    public void loadpromptpageactivation()
+    {
+        homepage.active = false;
+        themespage.active = false;
+        inDepthpage.active = false;
+        promptPage.active = false;
+        loadPromptPage.active = true;
+
+        // starts loading in all saved files as selectable buttons
     }
     public void detailSetbasic()
     {
