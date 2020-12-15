@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 using System.IO;
-using System.Collections;
 using TMPro;
 using UnityEngine.UI;
 
@@ -12,7 +11,7 @@ public class promptLoader : MonoBehaviour
     public GameObject prefabLoadButton;
     public GameObject promptList;
     public GameObject promptText;
-    public GameObject filenameArea;
+    public InputField filenameArea;
     public GameObject savePanel;
 
     public worldcode mainCode;
@@ -61,22 +60,22 @@ public class promptLoader : MonoBehaviour
     }
     public void savePrompt()
     {
-        Debug.Log("The file name is " + filenameArea.GetComponent<TextMeshProUGUI>().text);
-        System.IO.File.WriteAllText(path + "/" + filenameArea.GetComponent<TextMeshProUGUI>().text + ".txt", promptText.GetComponent<TextMeshProUGUI>().text);
+        //Debug.Log("The file name is " + filenameArea.GetComponent<InputField>().text);
+
+        
+        System.IO.File.WriteAllText(path + "/" + filenameArea.GetComponent<InputField>().text + ".txt", promptText.GetComponent<TextMeshProUGUI>().text);
         saveClear();
         savePanel.active = false;
     }
+
     public void saveClear()
-    {
-        Debug.Log("We are getting into the clear function");
-        filenameArea.GetComponent<TextMeshProUGUI>().SetText("");
+    { 
+        filenameArea.GetComponent<InputField>().text = "";
     }
+
     public void activateSavePanel()
     {
         savePanel.active = true;
     }
-
-
-
 
 }
