@@ -1,0 +1,15 @@
+Power: nature
+Alignment: Chaotic Evil
+Physical Description 
+ethnicity: native american
+size: giant
+age: child
+sex: male
+Character Characteristics 
+    dexterity
+    dexterity
+Body Type: sickly
+Important Concepts to the character: 
+    advancements in a field
+    control
+Place in Orginizations: lone wolf

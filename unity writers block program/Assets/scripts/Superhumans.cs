@@ -30,6 +30,8 @@ public class Superhumans : MonoBehaviour
 
     public void promptCreation(int detail)
     {
+        string age = "empty";
+        string bodytype = "empty";
         if(detail >= 1)
         {
             description.GetComponent<TextMeshProUGUI>().text += "Power: " + listSelector.chooseFromlist("power") + "\n";
@@ -41,14 +43,24 @@ public class Superhumans : MonoBehaviour
             description.GetComponent<TextMeshProUGUI>().text += "Physical Description \n";
             description.GetComponent<TextMeshProUGUI>().text += "ethnicity: " + listSelector.chooseFromlist("ethnicity") + "\n";
             description.GetComponent<TextMeshProUGUI>().text += "size: " +listSelector.chooseFromlist("size") + "\n";
-            description.GetComponent<TextMeshProUGUI>().text += "age: " + listSelector.chooseFromlist("age") + "\n";
+            age = listSelector.chooseFromlist("age");
+            description.GetComponent<TextMeshProUGUI>().text += "age: " + age + "\n";
             description.GetComponent<TextMeshProUGUI>().text += "sex: " + listSelector.chooseFromlist("sex") + "\n";
             // characteristic themes
             description.GetComponent<TextMeshProUGUI>().text += "Character Characteristics \n";
             description.GetComponent<TextMeshProUGUI>().text += "    " + listSelector.chooseFromlist("characteristics") + "\n";
             description.GetComponent<TextMeshProUGUI>().text += "    " + listSelector.chooseFromlist("characteristics") + "\n";
-            // body type
-            description.GetComponent<TextMeshProUGUI>().text += "Body Type: " + listSelector.chooseFromlist("bodytype") + "\n";
+
+
+            // I added this code and made it so bodytype and age are saved because I dont want a thick or curvy child character for obvious reasons.
+            if(age == "child")
+            {
+                do
+                {
+                    bodytype = listSelector.chooseFromlist("bodytype");
+                } while (bodytype == "curvy" || bodytype == "thick");
+            }
+            description.GetComponent<TextMeshProUGUI>().text += "Body Type: " + bodytype + "\n";
 
         }
         if(detail >= 3)

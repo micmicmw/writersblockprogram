@@ -24,12 +24,16 @@ public class lists : MonoBehaviour
 
     private ArrayList powerTheme = new ArrayList() { "darkness", "earth", "mental", "illusion", "water", "ice", "fire", "air", "death", "life", "nature",
                                                     "metal", "teleportation", "body augmentation" };
+
+
+
+
     private ArrayList characteristics = new ArrayList() { "wealth","intellegence","speed","strength","street smarts","dexterity","strength","charisma" };
 
     private ArrayList bodyType = new ArrayList() { "sickly", "average", "slim", "thick", "obese", "body builder", "curvy" };
     private ArrayList alignment = new ArrayList() { "Lawful Good","Lawful Neatral", "Lawful Evil","Neutral Good", "True Neautral", "Neautral Evil",
                                                     "Chaotic Good","Chaotic Neatral", "Chaotic Evil" };
-    private ArrayList importantIdeas = new ArrayList() { "money", "protecting my people", "revenge", "power", "love", "history", "control", "good vs evil",
+    private ArrayList importantIdeas = new ArrayList() { "money", "protecting my people", "revenge", "power", "love", "history", "control",
                                                         "preservation / destruction", "science", "religion", "advancements in a field" };
     private ArrayList groupStatus = new ArrayList() { "lone wolf", "group leader", "second in command", "minion", "middle management", "situational" };
 

@@ -75,7 +75,9 @@ public class promptLoader : MonoBehaviour
 
     public void activateSavePanel()
     {
-        savePanel.active = true;
+
+        savePanel.active = !savePanel.active;
+        saveClear();
     }
 
 }
