@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Text.RegularExpressions;
@@ -22,25 +23,36 @@ public class UtilityCode : MonoBehaviour
         StreamWriter writer = new StreamWriter(writepath, true);
         string[] scrubbedfile = file.Split('\n');
         //Debug.Log(scrubbedfile.Length);
-        char period = '.';
-        char space = '	';
-        string fixedLine = "";
+
+        //s = s.TrimEnd(new char[] { '\r', '\n' });
+
+
         for (int i = 0; i < scrubbedfile.Length; i++)
         {
-            char[] chars = scrubbedfile[i].ToCharArray();
-            for(int r = 0; r < chars.Length; r++)
-            {
-                
-                if(chars[r] != period && chars[r] != space)
-                {
-                    Debug.Log(chars[r]);
-                    fixedLine += chars[r];
-                }
-            }
-            writer.WriteLine(fixedLine);
-            fixedLine = "";
-
         }
+        /*
+        scrubbedfile[i] = scrubbedfile[i].Replace("	", "");
+        //String line = strWithTabs.Replace("    ", "");
+        //scrubbedfile[i] = scrubbedfile[i].Replace(" ", "");
+        //scrubbedfile[i] = scrubbedfile[i].Remove('\n');
+
+        //Debug.Log(scrubbedfile[i]);
+
+        writer.Write(scrubbedfile[i]);
+        string holder = "";
+        for(int r = 0; r< scrubbedfile[i].Length; r++)
+        {
+            if (Char.IsLetter(scrubbedfile[i][r]))
+            {
+                holder += scrubbedfile[i][r];
+
+            }
+        }
+        Debug.Log(holder);
+        scrubbedfile[i] = holder;
+        */
+        
+        writer.Write(scrubbedfile);    
         writer.Close();
 
     }

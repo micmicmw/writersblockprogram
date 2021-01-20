@@ -37,6 +37,11 @@ public class lists : MonoBehaviour
                                                         "preservation / destruction", "science", "religion", "advancements in a field" };
     private ArrayList groupStatus = new ArrayList() { "lone wolf", "group leader", "second in command", "minion", "middle management", "situational" };
 
+
+
+
+
+
     public string chooseFromlist(string list)
     {
         
